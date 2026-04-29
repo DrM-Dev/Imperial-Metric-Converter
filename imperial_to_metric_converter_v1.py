@@ -68,18 +68,18 @@ window.title("Metric & Imperial Converter v1")
 #==================window icons:
 #___________ICONS
 #PROGRAM ICON------------------
-program_icon = PhotoImage(file="Conversion Icon.png")
+program_icon = PhotoImage(file="images/Conversion Icon.png")
 ############
 prog_icon_label = Label(window, image=program_icon)
 prog_icon_label.place(x=-21.5, y=150)
 
 #INFO-SCREEN-------------------
-info_screen_img = PhotoImage(file="info_screen2.png")
+info_screen_img = PhotoImage(file="images/info_screen2.png")
 info_screen_label = Label(window,image=info_screen_img)
 info_screen_label.place(x=250, y=-10)
 
 #CONVERSION-COMPLETE ICON------------
-complete_img = PhotoImage(file="Complete.png")
+complete_img = PhotoImage(file="images/Complete.png")
 complete_img_label = Label(window, image=complete_img)
 complete_img_label.place(x=10000, y=10000) #->out of bounds
 #
@@ -90,7 +90,7 @@ conversion_done_txt.place(x=10000, y=10000) #->out of bounds
 #INPUT WARNING ICON------------
 is_warning_on = False #default
 #
-warning_img = PhotoImage(file="Warning.png")
+warning_img = PhotoImage(file="images/Warning.png")
 warning_img_label = Label(window, image=warning_img)
 warning_img_label.place(x=10000, y=10000) #->out of bounds
 #
@@ -102,11 +102,11 @@ input_warning2 = Label(text="-Please try typing numbers only!")
 processing_lights_x = 452
 processing_lights_y = 249
 #====
-processing_light_g_img = PhotoImage(file="green_state.png")
+processing_light_g_img = PhotoImage(file="images/green_state.png")
 processing_light_g = Label(window, image=processing_light_g_img)
 processing_light_g.place(x=processing_lights_x,y=processing_lights_y)
 #====
-processing_light_r_img = PhotoImage(file="red_state.png")
+processing_light_r_img = PhotoImage(file="images/red_state.png")
 processing_light_r = Label(window, image=processing_light_r_img)
 processing_light_r.place(x=10000,y=10000)
 
@@ -295,7 +295,7 @@ def convertion():
             try:
                 input_in_miles = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round(input_in_miles * 1.6)
+                RESALT = round(input_in_miles * 1.6, 2 )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
@@ -318,7 +318,7 @@ def convertion():
             try:
                 input_in_km = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round(input_in_km / 1.6)
+                RESALT = round(input_in_km / 1.6, 2 )
                 output_num.config(text=f"{RESALT}")
                 # XXXX
                 # removing-warning after typing numbers:
@@ -346,7 +346,7 @@ def convertion():
             try:
                 input_in_f = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( (input_in_f - 32) * 0.56 )
+                RESALT = round( (input_in_f - 32) * 0.56, 2  )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
@@ -368,7 +368,7 @@ def convertion():
             try:
                 input_in_c = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( input_in_c * 1.8 + 32 )
+                RESALT = round( input_in_c * 1.8 + 32, 2  )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
@@ -396,7 +396,7 @@ def convertion():
             try:
                 input_in_lb = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( input_in_lb * 0.45 )
+                RESALT = round( input_in_lb * 0.45, 2  )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
@@ -418,7 +418,7 @@ def convertion():
             try:
                 input_in_kg = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( input_in_kg / 0.45 )
+                RESALT = round( input_in_kg / 0.45, 2  )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
@@ -445,7 +445,7 @@ def convertion():
             try:
                 input_in_gal = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( input_in_gal * 3.785 )
+                RESALT = round( input_in_gal * 3.785, 2  )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
@@ -467,7 +467,7 @@ def convertion():
             try:
                 input_in_li = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( input_in_li / 3.785 )
+                RESALT = round( input_in_li / 3.785, 2 )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
