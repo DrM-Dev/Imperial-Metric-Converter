@@ -396,7 +396,7 @@ def convertion():
             try:
                 input_in_lb = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( input_in_lb * 0.45, 2  )
+                RESALT = round( input_in_lb * 0.45, 1  )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
@@ -418,7 +418,7 @@ def convertion():
             try:
                 input_in_kg = float(user_text_input.get()) #INPUT
                 #
-                RESALT = round( input_in_kg / 0.45, 2  )
+                RESALT = round( input_in_kg / 0.45, 1  )
                 output_num.config(text=f"{RESALT}")
                 #XXXX
                 # removing-warning after typing numbers:
