@@ -1,7 +1,7 @@
 # Imperial & Metric Converter-0.1
-*Measruments converter*
+*Measurements converter*
 
-this program allows you to convert untis between the 2 main systems of measurments being the imperial(mostly used by the US) and Metric(used by the rest of the world)
+This program allows you to convert unties between the 2 main systems of measurements being the imperial(mostly used by the US) and Metric(used by the rest of the world)
 
 ____________________
 this includes the following conversion options:
