@@ -1,5 +1,5 @@
-#Metric & Imperial Converter v01 by Dr.M-DEV
-
+#Metric & Imperial Converter by Dr.M-DEV
+ver = 0.1
 #==================imports:
 from tkinter import *
 from numpy.ma.core import size
@@ -47,7 +47,7 @@ print('''
 
  ''')
 
-print("**** WELCOME to Metric & Imperial Converter v1    -by-    Dr.M-Dev ****")
+print(f"**** WELCOME to Metric & Imperial Converter {ver}    -by-    Dr.M-Dev ****")
 #______________________________________________________________
 
 
